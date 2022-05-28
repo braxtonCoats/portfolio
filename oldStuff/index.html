@@ -1,0 +1,132 @@
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<meta charset="utf-8"></meta>
+
+<link rel="stylesheet" id="theme_css" href="./stylesheet.css"></link>
+<title>Test Portfolio</title>
+
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+
+<body>
+<div class="container">
+  <h1>Sample Components</h1>
+</div>
+
+<div class="container">
+  <h2>Text Field</h2>
+  <div class="itemContainer">
+
+      <div class="textField">
+        <label for="baseTF">
+          <span class="required">*</span>
+          Text Field
+          <span class="material-icons" id="helpIcon">help_outline</span>
+        </label>
+        <input
+          id="baseTF"
+          type="text"
+          placeholder="Placeholder"/>
+      </div>
+
+      <div class="textField">
+        <label for="baseTF">
+          <span class="required">*</span>
+          Order Type
+          <span class="material-icons" id="helpIcon">help_outline</span>
+        </label>
+
+        <select id="ordertype">
+          <option>New Number</option>
+          <option>Port-in</option>
+          </select>
+      </div>
+
+  </div>
+  <div class="textField">
+      <select id="testSelect">
+          <option value="hello">hello</option>
+          <option value="world">world</option>
+      </select>
+  </div>
+</div>
+
+<!--   <form
+    class="clearfix"
+    autocomplete="off">
+    <div class="field">
+      <label for="ordertype">
+        <span class="required">*</span>
+        Order Type
+        <span class="icon"></span>
+      </label>
+
+      <div class="select-wrapper">
+        <select id="ordertype">
+          <option>New Number</option>
+          <option>Port-in</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="orderstatus">Order Status</label>
+
+      <input
+        id="orderstatus"
+        type="text"
+        placeholder="e.g. Complete"/>
+    </div>
+
+    <div class="field">
+      <label for="bworderid">Bandwidth Order ID</label>
+
+      <input
+        id="bworderid"
+        type="text"/>
+      <span class="help">This is the ID that no one likes</span>
+    </div>
+
+    <div class="field">
+      <label for="orderid">Custom Order ID<span class="icon"></span></label>
+
+      <input
+        id="orderid"
+        type="text"/>
+      <span class="help">This is the ID you probably don't use</span>
+    </div>
+
+    <div class="field">
+      <label for="pnum">Phone Number</label>
+
+      <input
+        id="pnum"
+        type="text"
+        placeholder="18005551234"/>
+    </div>
+
+    <div class="field">
+      <label for="other">Some Other Field</label>
+
+      <input
+        id="other"
+        type="text"/>
+      <span class="help">I'm not helpful</span>
+    </div>
+
+  </form> -->
+  <div class="container">
+    <h2 id="conItem">Button</h2>
+    <div class="itemContainer">
+      <button class="filled" id="conItem">Button</button>
+      <button class="filled" id="conItem">Button</button>
+    </div>
+    <div class="itemContainer">
+      Test Item Container
+    </div>
+  </div>
+
+</body>
+<script src="./js/scripts.js"></script>

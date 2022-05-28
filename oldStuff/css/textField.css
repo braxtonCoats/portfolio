@@ -1,0 +1,119 @@
+.textField label,
+.textField input,
+.textField select,
+.textField .help {
+  display: block;
+  width: 100%;
+}
+.textField label {
+  font-size   : 12px;
+  font-weight : bold;
+}
+#helpIcon{
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: var(--theme-primary);
+  border-radius: 1em;
+
+}
+
+#helpIcon:hover {
+  cursor: pointer;
+  color: var(--theme-secondary);
+  background: var(--theme-primary-container-variant);
+}
+
+.required {
+  font-weight : bold;
+  color: var(--theme-error);
+}
+
+.textField input {
+  background    : var(--theme-surface);
+  box-sizing    : border-box;
+  margin        : 4px 0;
+  padding       : 8px 16px;
+  border        : none;
+  border-bottom : 1px solid var(--theme-outline-variant);
+  border-radius : 8px 8px 0 0;
+  outline       : none;
+  font-size     : 16px;
+  font-weight   : 400;
+  transition    : all .2s ease;
+}
+
+.textField select {
+  /* Reset */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  background    : var(--theme-surface);
+  box-sizing    : border-box;
+  margin        : 4px 0;
+  padding       : 8px 16px;
+  border        : none;
+  border-bottom : 1px solid var(--theme-outline-variant);
+  border-radius : 8px 8px 0 0;
+  outline       : none;
+  font-size     : 16px;
+  font-weight   : 400;
+  transition    : all .2s ease;
+  cursor: pointer;
+
+  background-image: url('../material-design-icons/src/action/alarm/materialicons/24px.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  background-size: 24px;
+
+}
+
+.textField input:hover {
+  border-bottom-color : var(--theme-primary);
+  box-shadow          : 0 2px 3px -2px rgba(0,0,0,.25),
+                        0 -1px 0 var(--theme-primary) inset;
+
+}
+
+.textField input::placeholder,
+.textField select::placeholder {
+  color: var(--theme-on-background);
+}
+
+.textField .help {
+  font-size : .75rem;
+}
+
+.textField input:focus {
+  border-color : var(--theme-primary);
+  background   : var(--theme-primary-container);
+  box-shadow : 0 2px 3px -2px rgba(0,0,0,.25),
+               0 -1px 0 var(--theme-primary) inset,
+               0 0 4px var(--theme-primary-container) inset;
+}
+
+.textField input:active {
+  background: var(--theme-primary-container-variant);
+}
+
+
+/* figure out these colors for icon hover */
+.light form .field label .icon:hover:after {
+  color        : #084f7a;
+  border-color : #084f7a;
+  background   : #e6f5fd;
+  box-shadow   : 0 0 0 2px #e6f5fd;
+}
+
+.light form .field input:focus,
+.light form .field select:focus {
+  border-color : var(--theme-primary);
+  background   : var(--theme-primary-container);
+  box-shadow   : 0 2px 3px -2px rgba(0,0,0,.25),
+                 0 -1px 0 var(--theme-primary) inset,
+                 0 0 4px #E6F5FD inset;
+}

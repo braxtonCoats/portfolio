@@ -1,0 +1,57 @@
+#themeIcon {
+  padding: 8px;
+  border-radius: 16px;
+  background: var(--theme-surface);
+  color: var(--theme-primary);
+  position: relative;
+  border: solid 3px var(--theme-surface);
+
+}
+
+#themeIcon:hover{
+  background: var(--theme-surface-variant);
+  color: var(--theme-on-surface-variant);
+}
+
+#themeIcon:active{
+  color: var(--theme-primary);
+  border: solid 3px var(--theme-primary);
+}
+
+.sideNav {
+  z-index    : 1;
+  position   : fixed;
+  top        : 0;
+  left       : 0;
+  width      : 100px;
+  height     : 100%;
+  padding    : 8px;
+  overflow-x : hidden;
+  background : var(--theme-surface);
+  transition : 0.5s;
+}
+
+.sidenav a {
+  display         : block;
+  margin-top      : 16px;
+  padding         : 16px;
+  color           : var(--theme-on-surface);
+  border-radius   : 8px;
+  background      : var(--theme-surface);
+  text-decoration : none;
+}
+
+.sidenav a:hover {
+  color      : var(--theme-on-surface-variant);
+  background : var(--theme-surface-variant);
+}
+
+.sidenav .active {
+  color      : var(--theme-on-primary);
+  background : var(--theme-primary);
+}
+
+.sidenav .active:hover {
+  color      : var(--theme-on-secondary);
+  background : var(--theme-secondary);
+}

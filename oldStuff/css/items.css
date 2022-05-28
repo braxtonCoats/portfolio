@@ -1,0 +1,11 @@
+.itemContainer{
+  border-radius: 0px;
+  background: var(--theme-surface);
+  border: 3px solid red;
+}
+
+#item {
+  margin-top:15%;
+  margin-left:auto;
+  margin-right: auto;
+}
