@@ -3,6 +3,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Home from './pages/Home'
 import Navigation from './navigation/Navigation'
 import { Grid } from '@mui/material';
+import theme from './theme';
+import { CustomPalette } from './theme/palette';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -30,11 +32,7 @@ export default function ToggleColorMode() {
 
   const theme = React.useMemo(
     () =>
-      createTheme({
-        palette: {
-          mode,
-        },
-      }),
+      createTheme(CustomPalette(mode)),
     [mode],
   );
 

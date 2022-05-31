@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import placeholder from '../assets/img/placeholder-image.png';
+import { CustomPalette } from "../theme/palette";
 
 function Copyright() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
             <Grid item key={card} xs={12} sm={6} md={4}>
               <Card
                 sx={{
-                  backgroundColor: '#F7E0FF',
+                  backgroundColor: 'primary.container',
                   height: "auto",
                   display: "flex",
                   flexDirection: "column",
@@ -87,18 +88,18 @@ export default function Home() {
                   alt="random"
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Heading
+                  <Typography gutterBottom variant="h5" component="h2" color='primary.main'>
+                    Project Name
                   </Typography>
-                  <Typography>
-                    This is a media card. You can use this section to describe
-                    the content.
+                  <Typography color= 'rgba(151, 53, 149, 1)'>
+                    This is where I'll give a small description of this project.
                   </Typography>
                 </CardContent>
+                {/** I dont need these now but may want them in the future 
                 <CardActions>
                   <Button size="small">View</Button>
                   <Button size="small">Edit</Button>
-                </CardActions>
+                </CardActions> */}
               </Card>
             </Grid>
           ))}
